@@ -34,8 +34,10 @@ end
 
 group :test do
   gem 'shoulda-matchers'
+  gem 'selenium-webdriver'
   gem 'capybara'
   gem 'launchy'
+  gem 'database_cleaner'
 end
 
 gem 'slim-rails'
