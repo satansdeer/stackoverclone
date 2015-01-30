@@ -7,10 +7,10 @@ feature 'User answer', %q{
 } do
   
   given (:user) { create(:user) }
-  given (:question) { creater(:question) }
+  given (:question) { create(:question) }
   
   scenario 'Authenticated user creates answer' do
-    sign_in(user)
+    sign_in_user(user)
     visit question_path(question)
 
     fill_in 'Your answer', with: 'My answer'
